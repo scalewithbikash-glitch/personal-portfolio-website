@@ -73,17 +73,35 @@ export function PortraitPanel({ className, imageSrc }: PortraitPanelProps) {
           </div>
         )}
 
-        {/* Caption bar */}
-        <div className="absolute inset-x-0 bottom-0 border-t border-white/[0.07] bg-ink/70 px-5 py-4 backdrop-blur-md">
-          <div className="flex flex-wrap items-center justify-between gap-3 text-xs">
-            <span className="flex items-center gap-1.5 text-fg-muted">
-              <MapPin className="size-3.5 text-purple-400" aria-hidden="true" />
-              {siteConfig.location.full}
-            </span>
-            <span className="flex items-center gap-1.5 text-fg-subtle">
-              <Sparkles className="size-3.5 text-blue-400" aria-hidden="true" />
-              Available for consulting
-            </span>
+        {/* Bottom overlay stack: name/role sits above the existing caption
+            bar, both layered over the photo. Wrapping in one bottom-anchored
+            flex column (rather than a hardcoded offset) is what lets the new
+            block sit flush above the caption bar regardless of how its text
+            wraps at different widths — the caption bar itself keeps its
+            original classes and content unchanged. */}
+        <div className="absolute inset-x-0 bottom-0 flex flex-col">
+          {/* Name & role, overlaid on the photo */}
+          <div className="bg-gradient-to-t from-ink/90 via-ink/60 to-transparent px-5 pt-12 pb-3 text-center">
+            <p className="text-lg font-semibold text-fg sm:text-xl">
+              {siteConfig.person}
+            </p>
+            <p className="mt-0.5 text-xs text-fg-muted sm:text-sm">
+              {siteConfig.role}
+            </p>
+          </div>
+
+          {/* Caption bar */}
+          <div className="border-t border-white/[0.07] bg-ink/70 px-5 py-4 backdrop-blur-md">
+            <div className="flex flex-wrap items-center justify-between gap-3 text-xs">
+              <span className="flex items-center gap-1.5 text-fg-muted">
+                <MapPin className="size-3.5 text-purple-400" aria-hidden="true" />
+                {siteConfig.location.full}
+              </span>
+              <span className="flex items-center gap-1.5 text-fg-subtle">
+                <Sparkles className="size-3.5 text-blue-400" aria-hidden="true" />
+                Available for consulting
+              </span>
+            </div>
           </div>
         </div>
       </div>

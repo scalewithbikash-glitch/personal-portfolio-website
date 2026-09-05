@@ -21,7 +21,7 @@ export function AboutPreview() {
       <Container size="wide">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal direction="right" className="order-2 lg:order-1">
-            <PortraitPanel />
+            <PortraitPanel imageSrc="/images/bikash-headshot.png" />
           </Reveal>
 
           <div className="order-1 lg:order-2">
