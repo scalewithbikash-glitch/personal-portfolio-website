@@ -161,7 +161,7 @@ export default function AboutPage() {
         <Container size="wide">
           <div className="grid items-start gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
             <Reveal direction="right">
-              <PortraitPanel />
+              <PortraitPanel imageSrc="/images/bikash-headshot.png" />
             </Reveal>
 
             <Reveal delay={0.08}>
