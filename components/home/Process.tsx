@@ -8,33 +8,33 @@ import { GlowOrb } from "@/components/animations/GlowOrb";
 export const marketingProcess = [
   {
     step: "01",
-    title: "Discover",
+    title: "Understand",
     description:
-      "Understand business goals, customers, positioning, and the marketing systems already in place.",
+      "Know your business before we build anything. We understand your goals, customers, offer, market, and current marketing.",
   },
   {
     step: "02",
-    title: "Diagnose",
+    title: "Find the Bottleneck",
     description:
-      "Identify the bottlenecks, the opportunities, and the work that is genuinely worth automating.",
+      "Fix what is holding growth back. We find the biggest gaps in your offer, marketing, funnel, conversion, or follow-up.",
   },
   {
     step: "03",
-    title: "Strategize",
+    title: "Build the Growth Plan",
     description:
-      "Build a practical AI-powered growth strategy with sequencing, owners and a measurement model.",
+      "Focus on what can create the biggest result. We create a clear strategy, offer, funnel, and growth plan based on your business.",
   },
   {
     step: "04",
-    title: "Implement",
+    title: "Launch & Automate",
     description:
-      "Deploy the workflows, campaigns, content systems and automation the strategy calls for.",
+      "Put the system to work. We launch the campaigns, content, funnels, and automation needed to attract and convert customers.",
   },
   {
     step: "05",
-    title: "Optimize",
+    title: "Measure & Scale",
     description:
-      "Measure against the plan, improve the weakest step each cycle, and document what worked.",
+      "Keep what works. Fix what doesn't. We track the numbers, improve the weakest part, and scale what produces results.",
   },
 ];
 
@@ -53,8 +53,8 @@ export function Process() {
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionHeading
               eyebrow="The process"
-              title="How an engagement runs"
-              description="The same five phases apply whether the work is a three-week strategy sprint or an ongoing retainer. What changes is depth, not sequence."
+              title="From Business Problem to Measurable Growth"
+              description="A simple five-step process designed to find what is holding your business back, build what matters, and improve what works."
             />
           </div>
 

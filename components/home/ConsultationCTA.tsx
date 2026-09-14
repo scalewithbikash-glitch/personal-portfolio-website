@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MessageSquare } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/Badge";
 import { GradientText } from "@/components/ui/GradientText";
 import { Reveal } from "@/components/animations/Reveal";
 import { FloatingParticles } from "@/components/animations/FloatingParticles";
-import { primaryCta, siteConfig } from "@/lib/site";
+import { primaryCta } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 interface ConsultationCTAProps {
@@ -22,8 +22,12 @@ interface ConsultationCTAProps {
  */
 export function ConsultationCTA({
   eyebrow = "Book a consultation",
-  title,
-  description = "A 30-minute call to understand what you are working on. You will leave with at least one concrete thing to try, whether or not we work together.",
+  title = (
+    <>
+      Find Out What&apos;s Holding Your <GradientText>Growth Back</GradientText>
+    </>
+  ),
+  description = "Get a free 60-minute strategy call to identify your biggest growth opportunity and get a personalized growth plan for your business: what you should do next.",
   className,
 }: ConsultationCTAProps) {
   return (
@@ -48,12 +52,7 @@ export function ConsultationCTA({
               </Badge>
 
               <h2 className="mt-6 text-display-sm font-semibold text-fg">
-                {title ?? (
-                  <>
-                    Let&apos;s build your next{" "}
-                    <GradientText>growth system</GradientText>
-                  </>
-                )}
+                {title}
               </h2>
 
               <p className="mt-5 text-base leading-relaxed text-fg-muted sm:text-lg">
@@ -62,27 +61,13 @@ export function ConsultationCTA({
 
               <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button href={primaryCta.href} size="lg" className="w-full sm:w-auto">
-                  {primaryCta.label}
+                  Book a Free Growth Call
                   <ArrowRight
                     className="size-4 transition-transform duration-300 group-hover:translate-x-1"
                     aria-hidden="true"
                   />
                 </Button>
-                <Button
-                  href={`mailto:${siteConfig.email}`}
-                  size="lg"
-                  variant="secondary"
-                  className="w-full sm:w-auto"
-                >
-                  <Mail className="size-4" aria-hidden="true" />
-                  Email directly
-                </Button>
               </div>
-
-              <p className="mt-7 flex items-center justify-center gap-2 text-sm text-fg-subtle">
-                <MessageSquare className="size-3.5" aria-hidden="true" />
-                Typical reply within one business day
-              </p>
             </div>
           </div>
         </Reveal>

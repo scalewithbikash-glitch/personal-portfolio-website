@@ -12,10 +12,10 @@ import { ChannelMarquee } from "@/components/home/ChannelMarquee";
 import { primaryCta, siteConfig } from "@/lib/site";
 
 const capabilities = [
-  "AI marketing strategy",
-  "Automation systems",
-  "Lead generation",
-  "Analytics you trust",
+  "Growth system",
+  "AI + Automation + Digital Marketing",
+  "Lead Generation + Follow-Up + Analytics",
+  "Business Growth",
 ];
 
 export function Hero() {
@@ -37,32 +37,46 @@ export function Hero() {
 
             <RevealItem>
               <h1 className="mt-7 text-display-lg font-semibold text-fg">
-                Scale your business with{" "}
-                <GradientText animated>AI-powered marketing</GradientText>
+                Turn Your Marketing Into a{" "}
+                <GradientText animated>Growth System</GradientText>
               </h1>
             </RevealItem>
 
             <RevealItem>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-fg-muted sm:text-xl">
-                I help ambitious businesses leverage AI, automation, and digital
-                marketing to build growth systems that keep working after the
-                campaign ends.
+                Stop relying on scattered marketing, manual follow-ups, and
+                guesswork to grow your business.
+              </p>
+            </RevealItem>
+
+            <RevealItem>
+              <p className="mt-4 max-w-xl text-base leading-relaxed text-fg-muted">
+                I help business owners build AI-powered growth systems that
+                attract the right prospects, capture and qualify leads,
+                automate follow-up, and turn more opportunities into
+                customers — without adding more work to your plate.
               </p>
             </RevealItem>
 
             <RevealItem>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button href={primaryCta.href} size="lg">
-                  {primaryCta.label}
+                  Book Your Free Growth Strategy Call
                   <ArrowRight
                     className="size-4 transition-transform duration-300 group-hover:translate-x-1"
                     aria-hidden="true"
                   />
                 </Button>
-                <Button href="/services" size="lg" variant="secondary">
-                  Explore Services
-                </Button>
               </div>
+            </RevealItem>
+
+            <RevealItem>
+              <p className="mt-5 max-w-xl text-sm leading-relaxed text-fg-subtle">
+                In 60 minutes, we&apos;ll identify what&apos;s slowing down
+                your growth. Show you where you can create the biggest
+                opportunity and an actionable strategy for your business —
+                even if we never work together.
+              </p>
             </RevealItem>
 
             <RevealItem>

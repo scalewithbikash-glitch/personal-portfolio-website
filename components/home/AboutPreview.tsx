@@ -7,12 +7,12 @@ import { Reveal } from "@/components/animations/Reveal";
 import { PortraitPanel } from "@/components/about/PortraitPanel";
 
 const expertise = [
-  "AI marketing strategy",
-  "Marketing automation",
-  "SEO and content systems",
-  "Lead generation",
-  "Conversion optimisation",
-  "Marketing analytics",
+  "AI Marketing Strategy",
+  "Customer Acquisition",
+  "Offer and Funnel Building",
+  "Content and social media",
+  "AI and Marketing Automation",
+  "Conversion and Analytics",
 ];
 
 export function AboutPreview() {
@@ -31,25 +31,24 @@ export function AboutPreview() {
 
             <Reveal delay={0.06}>
               <h2 className="mt-5 text-display-sm font-semibold text-fg">
-                An AI marketing consultant who starts with your business, not a
-                tool list
+                I help businesses turn marketing into predictable growth
               </h2>
             </Reveal>
 
             <Reveal delay={0.12}>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-fg-muted">
                 <p>
-                  I&apos;m Bikash Gurung, an AI digital marketing expert and
-                  consultant focused on helping businesses use artificial
-                  intelligence, automation, and modern marketing systems to grow
-                  smarter.
+                  I am Bikash Gurung, an AI digital marketing expert and
+                  consultant focused on helping businesses attract more
+                  customers, convert more leads, and grow with less wasted
+                  time and money.
                 </p>
                 <p>
-                  Most of the work is unglamorous: finding where a funnel leaks,
-                  fixing measurement nobody trusts, removing manual steps that
-                  should never have existed. AI comes in where it genuinely
-                  compresses time or improves a decision — not everywhere at
-                  once.
+                  I don&apos;t believe in using AI just because it&apos;s
+                  new. I find what&apos;s holding your growth back, build the
+                  right system, and use AI and automation where they create
+                  real results. The goal is simple: better marketing, more
+                  customers, and predictable growth.
                 </p>
               </div>
             </Reveal>
