@@ -7,7 +7,7 @@ export const siteConfig = {
   name: "Scalewithbikash",
   legalName: "Scalewithbikash",
   person: "Bikash Gurung",
-  role: "AI Digital Marketing Expert & Consultant",
+  role: "Growth Systems Consultant for Business Owners",
   tagline: "AI-powered strategies for smarter digital growth.",
   description:
     "Bikash Gurung is an AI digital marketing expert and consultant helping businesses use artificial intelligence, automation, and modern marketing systems to grow smarter.",

@@ -41,15 +41,15 @@ export function Footer() {
         <div className="flex flex-col gap-6 border-b border-white/[0.07] py-14 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-xl">
             <h2 className="text-2xl font-semibold tracking-tight text-fg sm:text-3xl">
-              Have a growth problem worth solving?
+              Let&apos;s Fix What&apos;s Holding You Back
             </h2>
             <p className="mt-3 text-fg-muted">
-              Tell me what you are working on. If I am not the right fit, I will
-              say so and point you somewhere better.
+              Tell me your biggest growth challenge, and I&apos;ll help you
+              find the next best move.
             </p>
           </div>
           <Button href={primaryCta.href} size="lg" className="w-full sm:w-auto">
-            {primaryCta.label}
+            Book a Free Growth Call
             <ArrowRight
               className="size-4 transition-transform duration-300 group-hover:translate-x-1"
               aria-hidden="true"

@@ -7,27 +7,33 @@ import { Divider } from "@/components/ui/Divider";
 const reasons = [
   {
     number: "01",
-    title: "Strategy before tools",
+    title: "Results Before Tools",
     description:
-      "Every engagement starts with what the business needs, not with a software shortlist. Sometimes the recommendation is that you do not need the tool at all.",
+      "We start with your business goal — not the latest AI tool. Every recommendation is tied to a real business outcome, so you're investing your time and money where it can have the biggest impact.",
   },
   {
     number: "02",
-    title: "You keep the system",
+    title: "Focus on What Matters",
     description:
-      "Workflows are documented, definitions written down, and your team trained. Nothing I build should require me to keep it running.",
+      "No unnecessary work. No complicated strategies. I focus on the few opportunities most likely to move your business forward — and ignore the rest.",
   },
   {
     number: "03",
-    title: "Honest measurement",
+    title: "One Expert, Directly Involved",
     description:
-      "I report what the data supports, including when a change did not work. Attribution models state their assumptions instead of implying precision they do not have.",
+      "You work directly with me — not a rotating agency team. From strategy to implementation, I stay involved in the work, make the decisions with you, and handle the technical and marketing details so you don't have to coordinate multiple people.",
   },
   {
     number: "04",
-    title: "Small, sequenced changes",
+    title: "Measure What Matters",
     description:
-      "One change per cycle, measured against a stable baseline. It is slower to start and much faster to knowing what actually moved the number.",
+      "No guessing. No vanity metrics. We track the numbers that actually matter to your business — leads, customers, conversion, and growth — so you know what's working and where to improve.",
+  },
+  {
+    number: "05",
+    title: "Always Improve",
+    description:
+      "Build it. Measure it. Make it better. What works gets optimized. What doesn't gets fixed. Your growth system keeps improving as we learn what works best for your business.",
   },
 ];
 
@@ -39,8 +45,8 @@ export function WhyWorkWithMe() {
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionHeading
               eyebrow="Why work with me"
-              title="A consultant you can hold to a number"
-              description="There is no shortage of people willing to sell AI marketing. These are the commitments that shape how I work."
+              title="Because Your Growth Should Be Measurable."
+              description="You don't need more marketing activity. You need someone who can look at the bigger picture, find what's holding your business back, and help you build a system that actually moves the numbers."
             />
           </div>
 
